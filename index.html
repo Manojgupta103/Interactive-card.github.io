@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./sass/style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card__front">
+        <div class="card__logo">
+          <div class="card__logo--1">&nbsp;</div>
+          <div class="card__logo--2">&nbsp;</div>
+        </div>
+        <div class="card__info">
+          <h2 class="card__number">0000 0000 0000 0000</h2>
+          <div class="card__info-bottom">
+            <p class="card__person">ERIC CHOO</p>
+            <p class="card__date">
+              <span class="card__date--month">00</span>/<span class="card__date--year">00</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card__back">
+        <p class="card__pin">000</p>
+      </div>
+    </div>
+
+    <form action="#" class="form">
+      <div class="wrapper ">
+        <div class="form__item form__item-1 mb-md">
+          <label class="mb-sm" for="name">Cardholder Name</label>
+          <input type="text" name="name" id="name" class="form__input" maxlength="18" autocomplete="cc-csc"
+            placeholder="e.g. Eric Choo">
+          <p class="invalid invalid--1"></p>
+        </div>
+        <div class="form__item form__item-2 mb-md">
+          <label class="mb-sm" for="number">Card Number</label>
+          <input type="text" name="number" id="number" class="form__input" minlength="16" maxlength="16"
+            autocomplete="cc-csc" placeholder="e.g. 1234 5678 9123 0000">
+          <p class="invalid invalid--2"></p>
+        </div>
+        <div class="form__row mb-md">
+          <div class="form__item form__item-3">
+            <label class="mb-sm" for="date">Exp. Date (MM/YY)</label>
+            <div>
+              <input class="form__input divided" type="text" name="date_month" id="date" minlength="2" maxlength="2"
+                autocomplete="cc-csc" placeholder="MM">
+              <input class="form__input divided" type="text" name="date_year" id="date" minlength="2" maxlength="2"
+                autocomplete="cc-csc" placeholder="YY">
+            </div>
+            <p class="invalid invalid--3"></p>
+          </div>
+          <div class="form__item form__item-4">
+            <label class="mb-sm" for="pin">CVC</label>
+            <input type="text" name="pin" id="pin" class="form__input" minlength="3" maxlength="3" autocomplete="cc-csc"
+              placeholder="e.g. 123">
+            <p class="invalid invalid--4"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="complete hidden">
+        <div class="complete__icon">
+          <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="40" fill="url(#a)" />
+            <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+            <defs>
+              <linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6348FE" />
+                <stop offset="1" stop-color="#610595" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="complete__text">
+          <h3>Thank You!</h3>
+          <p>We've added your card details</p>
+        </div>
+      </div>
+      <button id="btn-submit" type="submit">Confirm</button>
+    </form>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/ericcst197" target="_blank">Eric Choo</a>.
+    </div>
+  </div>
+</body>
+
+</html>

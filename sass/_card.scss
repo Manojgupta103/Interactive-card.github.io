@@ -1,0 +1,157 @@
+.card{
+    grid-row: 1 / span 4;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: repeat(12,1fr);
+    justify-items: center;
+    align-items: center;
+
+    @media(max-width: $tablet){
+        grid-row: 1 ;
+        background-image: url(../images/bg-main-mobile.png);
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(8,1fr);
+  
+        height: 15rem;
+        width: 100vw;
+    }
+
+    %card-size{
+        width: 24rem;
+        height: 13rem;
+        padding: 1.5rem 1.8rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: default;
+
+        display: flex;
+        flex-direction: column;
+
+        @media(max-width: $phone){
+            width: 18rem;
+            height: 10rem;
+            padding: 1rem 1.2rem;
+        }
+    }
+
+    &__front{
+        @extend %card-size;
+        grid-row: 3/6;
+        background-image: url(../images/bg-card-front.png);
+        justify-content: space-between;
+        transform: translate(25% ,10%);
+
+        @media(max-width: $tablet){
+            grid-row: 5/span 5;
+            grid-column: 2/3;
+            transform: translate(-10%, 10%);
+            z-index: 10;
+        }
+
+        @media(max-width: $sm-phone){
+            grid-column: 2/3;
+            transform: translateX(-10%)
+        }
+    }
+
+    &__logo{
+        display: flex;
+        align-items: center;
+
+        &--1{
+            width: 2rem;
+            height: 2rem;
+            background-color: $white;
+            border-radius: 50%;
+            @media(max-width: $tablet){
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+
+        &--2{
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid $white;
+            border-radius: 50%;
+            margin-left: 1rem;
+            @media(max-width: $tablet){
+                width: .8rem;
+                height: .8rem;
+            }
+        }
+    }
+
+    &__info{
+        width: 100%;
+        height: 40%;
+        color: $white;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-bottom{
+            font-size: .75rem;
+            letter-spacing: 2px;
+
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width: $phone){
+                  font-size: .7rem;
+            }
+        }
+    }
+
+    &__number{
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 4px;
+        word-spacing: 5px;
+
+        @media(max-width: $phone){
+            font-size: .9rem;
+            letter-spacing: 3px;
+            word-spacing: 2px;
+        }
+    }
+
+
+    &__back{
+        @extend %card-size;
+        grid-row: 8/ span 2;
+        transform: translateX(40%);
+        background-image: url(../images/bg-card-back.png);
+        
+        align-items: flex-end;
+        justify-content: center;
+
+        @media(max-width: $tablet){
+            grid-row: 2/span 5;
+            grid-column: 2/3;
+            transform: translate(10% ,10%);
+        }
+        
+        @media(max-width: $sm-phone){
+            grid-column: 2/3;
+            transform: translate(10%)
+        }
+
+    }
+
+    &__pin{
+        color: $white;
+        letter-spacing: 1px;
+        margin-right: 1.5rem;
+
+        @media(max-width: $tablet){
+            margin-right: 1rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.mb-sm{ margin-bottom: .325rem}
+.mb-md{ margin-bottom: 1rem}
+
+.hidden{ 
+    display: none;
+}
+
+.divided{ width: 45%; }
+
+.error{
+    border : 1px solid red;
+}
+
+.success{
+    background : linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right,rgb(100, 72, 254), rgb(96, 5, 148)) border-box;
+    border : 1px solid transparent;
+}
