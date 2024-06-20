@@ -17,7 +17,7 @@ const formWrapper = document.querySelector(".wrapper");
 const completeState = document.querySelector(".complete");
 
 function checkName() {
-  // initial value as false because there is no value
+
   let valid = false;
 
   const name = inputName.value;
@@ -108,29 +108,23 @@ function checkPin() {
   return valid;
 }
 
-//Show error when input is invalid
+
 function showError(input, message) {
   const invalid = input.closest(".form__item").querySelector(".invalid");
-  ////// Doesn't work with classList because of pseudoclass /////
-  // input.classList.remove('success')
-  // input.classList.add('error')
   input.style.border = "1px solid red";
   invalid.innerHTML = message;
 }
 
-// Show/Remain active state when the input is valid
 function showSuccess(input) {
   const invalid = input.closest(".form__item").querySelector(".invalid");
-  ////// Doesn't work with classList because of pseudoclass //////
-  // input.classList.add('success')
-  // input.classList.remove('error')
+
   input.style.background = `linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right,rgb(100, 72, 254), rgb(96, 5, 148)) border-box`;
   input.style.border = "1px solid transparent";
   invalid.innerHTML = "";
 }
 
-// To check name input
+
 function isAlphabet(str) {
   let char = str.split("");
 
@@ -154,7 +148,7 @@ function isAlphabet(str) {
   return true;
 }
 
-//To check cardNumber, date & pin input
+
 function isNumber(str) {
   let char = str.split("");
 
@@ -163,7 +157,7 @@ function isNumber(str) {
   return true;
 }
 
-// Number shown in the card
+
 function formatNumber(str, len) {
   str = str + "0".repeat(len - str.length);
   let arr = [];

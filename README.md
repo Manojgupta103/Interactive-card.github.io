@@ -8,11 +8,9 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -63,13 +61,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/ericcst197/interactive-card-details-form)
-- Live Site URL: [Live demo](https://ericcst197.github.io/interactive-card-details-form/)
+- Solution URL: [Github](https://github.com/Manojgupta103/Interactive-card.git)
+- Live Site URL: [Live demo](https://Manojgupta103.github.io/Interactive-card.git/)
 
-
-## My process
-
-Complete duration: 12 days (24 Aug 2022 - 4 Sept 2022). 
 
 
 ### Built with:
@@ -108,14 +102,8 @@ Some implementation can be added in future:
 - Click the card to switch the position from the front and the back.
 
 
-### Useful resources
-
-- [Javascript Form Validation](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/#:~:text=What%20is%20form%20validation,is%20called%20client%2Dside%20validation.) - This helped me for designing the Javascript function after being struggled for sometimes. I really liked this pattern and will use it going forward.
-- [Create a gradient border in CSS](https://nikitahl.com/gradient-border-css) - This is an article which helped me understand how to create a gradient border in CSS. I'd recommend it to anyone still learning this concept.
-
 
 ## Author
 
-- GitHub - [Eric Choo](https://github.com/ericcst197)
-- Frontend Mentor - [@ericcst197](https://www.frontendmentor.io/profile/ericcst197)
-
+- Website - [Manoj R Gupta](https://manoj-gupta-profile.vercel.app/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Manojgupta103)
