@@ -62,7 +62,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Manojgupta103/Interactive-card.git)
-- Live Site URL: [Live demo](https://Manojgupta103.github.io/Interactive-card.git/)
+- Live Site URL: [Live demo]([https://Manojgupta103.github.io/Interactive-card.git/](https://manojgupta103.github.io/Interactive-card.github.io/))
 
 
 
